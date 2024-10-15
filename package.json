@@ -11,5 +11,8 @@
     "@playwright/test": "^1.48.0",
     "@types/node": "^22.7.5",
     "playwright": "^1.48.0"
+  },
+  "dependencies": {
+    "axios": "^1.7.7"
   }
 }
