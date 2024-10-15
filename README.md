@@ -1,4 +1,6 @@
 # Playwright POM Automation Portfolio
+![Playwright Tests](https://github.com/ricky2094/Playwright-Porto/actions/workflows/playwright.yml/badge.svg)
+
 
 This project demonstrates how to use Playwright with the Page Object Model (POM) design pattern.
 
