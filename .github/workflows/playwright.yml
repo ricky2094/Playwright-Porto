@@ -25,3 +25,14 @@ jobs:
         name: playwright-report
         path: playwright-report/
         retention-days: 30
+    - name: Send Slack notification
+      if: always()  # Ensure notification is sent even if the tests fail
+      run: |
+          STATUS="success"
+          if [ "${{ job.status }}" != "success" ]; then
+            STATUS="failure"
+          fi
+
+          curl -X POST -H 'Content-type: application/json' --data "{
+            \"text\": \"CI job finished with status: $STATUS\"
+          }" ${{ secrets.SLACK_WEBHOOK_URL }}
