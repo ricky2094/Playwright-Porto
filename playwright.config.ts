@@ -28,6 +28,10 @@ export default defineConfig({
     screenshot: 'on',
     video: 'on',
     trace: 'on-first-retry',
+    extraHTTPHeaders:{
+      'Authorization': `Bearer e344dc94147ffeb2d376170a456cc9ccd5654e6bbfe9f0969a84f2ce4655f91a`
+
+    }
   },
 
   /* Configure projects for major browsers */
