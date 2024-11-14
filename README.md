@@ -13,3 +13,17 @@ This project demonstrates how to use Playwright with the Page Object Model (POM)
 
 ```bash
 npm install
+```
+
+## **Load Testing**
+- First thing is to install locust using this command 
+```bash
+pip install locust
+```
+- after that you can go to directory /tests/load-testing and run 
+```bash
+locust -f locustfile.py
+```
+- after the locust run you can go to http://localhost:8089
+- you can setup the numbers of user and ramp up on there
+- and click start to start do the test
