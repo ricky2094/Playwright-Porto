@@ -10,10 +10,10 @@ test.describe.parallel("API Testing", () => {
     const baseUrlReqres = 'https://reqres.in'
 
     test(" Get user details - assert response", async({request}) =>{
-        const response = await request.get(`${baseUrlGorest}/public/v2/users/7472254`)
+        const response = await request.get(`${baseUrlGorest}/public/v2/users/6942412`)
         const responseBody = JSON.parse(await response.text())
         expect(response.status()).toBe(200)
-        expect(responseBody.id).toBe(7472254)
+        expect(responseBody.id).toBe(6942412)
         expect(responseBody.gender).toBe('female')
     })
 

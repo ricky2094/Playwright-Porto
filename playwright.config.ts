@@ -29,7 +29,7 @@ export default defineConfig({
     video: 'on',
     trace: 'on-first-retry',
     extraHTTPHeaders:{
-      'Authorization': `Bearer e344dc94147ffeb2d376170a456cc9ccd5654e6bbfe9f0969a84f2ce4655f91a`
+      'Authorization': `Bearer 7841c1daf36f1846ebf2ca3769de67c768d69bccfc680ee0a690e8b3bd7e7fdc`
 
     }
   },
